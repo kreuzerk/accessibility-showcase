@@ -1,0 +1,14 @@
+<heading title="Color contrast" (toggleChange)="showAccessible = $event"></heading>
+<div class="container">
+  <p>
+    There are many interactive elements that are not accessible if they are not properly implemented.
+    We can use aria attributes to make them accessible. The aria attributes help
+    assistive technologies to identify the purpose of the interactive element.
+  </p>
+
+  <input *ngIf="!showAccessible" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  <input *ngIf="showAccessible" aria-label="Slider that lets you choose a range between one and one hundered" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+
+</div>
+
+

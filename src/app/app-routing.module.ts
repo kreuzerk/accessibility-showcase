@@ -4,7 +4,8 @@ import {RouterModule, Routes} from '@angular/router';
 const routes: Routes = [{
   path: 'images',
   loadChildren: () => import('./features/images/images.module').then(m => m.ImagesModule)
-}, {path: 'contrast', loadChildren: () => import('./features/contrast/contrast.module').then(m => m.ContrastModule)}];
+}, {path: 'contrast', loadChildren: () => import('./features/contrast/contrast.module').then(m => m.ContrastModule)},
+  { path: 'aria-attributes', loadChildren: () => import('./features/aria-attributes/aria-attributes.module').then(m => m.AriaAttributesModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
