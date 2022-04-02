@@ -1,0 +1,33 @@
+aside {
+  width: 250px;
+  height: 100vh;
+  background-color: #14213D;
+  overflow-x: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  font-family: Dosis, sans-serif;
+}
+
+h1 {
+  color: white;
+  padding-left: 20px;
+  font-size: 35px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+
+    &.active {
+      background-color: #FCA311;
+      box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    }
+  }
+}
