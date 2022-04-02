@@ -1,0 +1,20 @@
+%btn-base {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.not-accessible-button {
+  @extend %btn-base;
+  background: #FCA311;
+  color: white;
+}
+
+.accessible-button {
+  @extend %btn-base;
+  background: #FCA311;
+  color: #14213D;
+}

@@ -1,0 +1,10 @@
+<heading title="Color contrast" (toggleChange)="showAccessible = $event"></heading>
+<div class="container">
+  <p>
+   Color contrast is important for people with visual impairments. It is also important for people with color blindness.
+   The color contrast ratio is a measure of the contrast between two colors.
+  </p>
+  <button *ngIf="!showAccessible" class="not-accessible-button">Click me</button>
+  <button *ngIf="showAccessible" class="accessible-button">Click me</button>
+</div>
+
