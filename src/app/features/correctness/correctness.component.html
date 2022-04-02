@@ -1,0 +1,17 @@
+<heading title="Links" (toggleChange)="showAccessible = $event"></heading>
+<div class="container">
+  <p>
+    Links should always have a descriptive link of their target.
+  </p>
+  <div *ngIf="!showAccessible">
+    <h1 id="hero">Batman</h1>
+    <h1 id="hero">Spiderman</h1>
+    <a href="http://realtotal.de"></a>
+  </div>
+  <div *ngIf="showAccessible">
+    <h1 id="heroOne">Batman</h1>
+    <h1 id="heroTwo">Spiderman</h1>
+    <a href="http://realtotal.de">go to realtotal</a>
+  </div>
+</div>
+
