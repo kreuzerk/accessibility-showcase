@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HeadingComponent } from './heading/heading.component';
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { HeadingComponent } from './heading/heading.component';
   ],
   exports: [SidenavComponent, HeadingComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class CoreModule { }

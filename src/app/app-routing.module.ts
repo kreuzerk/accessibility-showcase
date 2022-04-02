@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [{ path: 'images', loadChildren: () => import('./features/images/images.module').then(m => m.ImagesModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
