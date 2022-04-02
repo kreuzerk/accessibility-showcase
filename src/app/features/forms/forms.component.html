@@ -1,0 +1,33 @@
+<heading title="Forms" (toggleChange)="showAccessible = $event"></heading>
+<div class="container">
+  <p>
+    Whenever we need forms on our website we have to ensure that each control is
+    correctly labeled.
+  </p>
+  <form *ngIf="!showAccessible" [formGroup]="$any(addressGroup)">
+    <div>
+      <label>Enter your name</label>
+      <input formControlName="name"/>
+    </div>
+  </form>
+
+  <div *ngIf="showAccessible">
+    <h2>Form with submit button</h2>
+    <form [formGroup]="$any(addressGroup)">
+      <div>
+        <label for="name">Enter your name</label>
+        <input id="name" formControlName="name"/>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+
+    <form *ngIf="showAccessible" [formGroup]="$any(addressGroup)">
+      <h2>Form without submit button</h2>
+      <div>
+        <label for="nameTwo">Enter your name</label>
+        <input id="nameTwo" formControlName="name"/>
+      </div>
+    </form>
+  </div>
+</div>
+

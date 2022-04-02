@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "test:accessibility": "pa11y-ci -c accessibility/pa11y-ci.json"
+    "test:accessibility": "pa11y-ci -c accessibility/pa11y-ci.json",
+    "test:accessibility-ignore-sumbit": "pa11y-ci -c accessibility/pa11y-ignore.js"
   },
   "private": true,
   "dependencies": {

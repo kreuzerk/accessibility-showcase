@@ -1,0 +1,18 @@
+:host {
+  width: 100%;
+}
+
+form {
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+input {
+  border-color: 1px solid #14213D;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
