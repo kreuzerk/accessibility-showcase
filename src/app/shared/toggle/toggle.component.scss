@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+}
+
+button {
+  background-color: #FFFFFF;
+  color: #14213D;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  opacity: 0.8;
+
+  &.active {
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    background-color: #14213D;
+    color: #FCA311;
+  }
+}
