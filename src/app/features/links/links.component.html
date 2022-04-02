@@ -1,0 +1,22 @@
+<heading title="Links" (toggleChange)="showAccessible = $event"></heading>
+<div class="container">
+  <p>
+    Links should always have a descriptive link of their target.
+  </p>
+  <div class="link-container" *ngIf="!showAccessible">
+    <a routerLink="../images">
+      <img src="assets/kakashi.jpg"/>
+    </a>
+    <a routerLink="../images">
+      <img class="question-icon" src="assets/circle-question-solid.svg"/>
+    </a>
+  </div>
+  <div class="link-container" *ngIf="showAccessible">
+    <a routerLink="../images">
+      <img alt="navigate to the images page" src="assets/kakashi.jpg"/>
+    </a>
+    <a routerLink="../images">
+      <img alt="navigate to the images page" class="question-icon" src="assets/circle-question-solid.svg"/>
+    </a>
+  </div>
+</div>

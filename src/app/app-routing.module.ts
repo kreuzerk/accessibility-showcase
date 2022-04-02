@@ -6,7 +6,8 @@ const routes: Routes = [{
   loadChildren: () => import('./features/images/images.module').then(m => m.ImagesModule)
 }, {path: 'contrast', loadChildren: () => import('./features/contrast/contrast.module').then(m => m.ContrastModule)},
   { path: 'aria-attributes', loadChildren: () => import('./features/aria-attributes/aria-attributes.module').then(m => m.AriaAttributesModule) },
-  { path: 'forms', loadChildren: () => import('./features/forms/forms.module').then(m => m.FormsModule) }];
+  { path: 'forms', loadChildren: () => import('./features/forms/forms.module').then(m => m.FormsModule) },
+  { path: 'links', loadChildren: () => import('./features/links/links.module').then(m => m.LinksModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
